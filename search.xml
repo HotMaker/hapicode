@@ -33,6 +33,14 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[gitclone错误解决办法]]></title>
+    <url>%2F2019%2F01%2F06%2F%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%2Fgitclone%E9%94%99%E8%AF%AF%2F</url>
+    <content type="text"><![CDATA[只要是git clone 就一直提示1086端口refused,无法access 。尝试过修改全局代理，git代理，修改本机socks5代理端口，更换代理软件，还是失败。尝试过各种修改端口还是关闭相关端口进程pid都无解。最终解决办法：把https改成git即可]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[Python-验证水仙花数]]></title>
     <url>%2F2019%2F01%2F04%2FPython%E5%AD%A6%E4%B9%A0%2F%E9%AA%8C%E8%AF%81%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0%2F</url>
     <content type="text"><![CDATA[水仙花数是一个非常有趣的数，他的特点是百位数的3次方+十位数的3次方+个位数三次方=数的本身，我们下边的程序就是来检测一个数是不是水仙花数。123456789101112131415161718# 只需要验证三位数# 百位数的3次方+十位数的3次方+个位数三次方=数的本身while True: num = input("请输入一个三位数:\n") num = int(num) if num &lt;100 or num &gt; 999: print("你输入的不是三位数！请重新输入") continue bai = (num //100) shi = (num // 10 % 10) ge = (num % 10) nums = (bai**3) + (shi**3) + (ge**3) if nums == num: print("%d这是水仙花数"%num) else: print("%d这不是水仙花数，请继续："%num)]]></content>
