@@ -1,2 +1,2 @@
-﻿#HotMaker.github.io
-定向网址 HotMaker.online
+#hapicode.github.io
+定向网址 hapicode.club
